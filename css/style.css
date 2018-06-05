@@ -1193,15 +1193,17 @@ article {
   width:100%;
   position:relative;
 }
+
+.category-header {
+  text-transform: uppercase;
+}
+
 .menu-item {
+  min-height: 140px;
   padding:24px 20px;
 }
 .menu-item-details {
   display:table
-}
-
-.menu-item-details-text {
-  text-transform: uppercase;
 }
 
 .menu-item-desc {
