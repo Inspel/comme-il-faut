@@ -1199,29 +1199,27 @@ article {
 }
 
 .menu-item {
-  min-height: 140px;
+  min-height: 156px;
   padding:24px 20px;
 }
 .menu-item-details {
-  display:table
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-item-desc {
+  max-width: 70%;
+  align-self: flex-end;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight:bold;
   font-style:italic;
-  text-align:left;
   font-size:13px;
   text-transform: uppercase;
-  display: table-cell;
-  white-space: nowrap;
-  width: 10%;
   line-height:15px;
-  text-align:left;
+  text-align: left;
+  word-break: keep-all;
 }
 .menu-item-dot {
-  display: table-cell;
-  width: 88%;
   border-bottom: 1px dotted #000;
 }
 .menu-item-price {
@@ -1229,11 +1227,9 @@ article {
   font-size:13px;
 }
 .menu-item-prices {
-  display: table-cell;
   white-space: nowrap;
-  width: 2%;
-  padding:10px 0 0 10px;
-  text-align:left;
+  padding: 0;
+  text-align: left;
 }
 .hot-deal:before {
   content:'';
