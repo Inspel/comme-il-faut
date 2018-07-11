@@ -366,6 +366,10 @@ section.header-section {
 .bold-separator:after {
   right:30%;
 }
+
+.bold-separator--menu {
+  margin: 5px 0 70px;
+}
 .parallax-section .bold-separator span {
   background:#fff;
 }
@@ -1202,6 +1206,11 @@ article {
   min-height: 156px;
   padding:24px 20px;
 }
+
+.menu-item p {
+  max-width: 75%;
+}
+
 .menu-item-details {
   display: flex;
   justify-content: space-between;
@@ -1213,7 +1222,7 @@ article {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight:bold;
   font-style:italic;
-  font-size:13px;
+  font-size:12px;
   text-transform: uppercase;
   line-height:15px;
   text-align: left;
@@ -1221,6 +1230,7 @@ article {
 }
 .menu-item-dot {
   border-bottom: 1px dotted #000;
+  flex-grow: 1;
 }
 .menu-item-price {
   text-align:left;
@@ -1230,6 +1240,7 @@ article {
   white-space: nowrap;
   padding: 0;
   text-align: left;
+  align-self: flex-end;
 }
 .hot-deal:before {
   content:'';
@@ -2968,5 +2979,15 @@ article h4 a:hover {
     background-attachment: scroll !important;
     -webkit-background-size:cover;
     background-position:center;
+  }
+}
+
+@media (max-width: 1320px) {
+  .menu-item-dot {
+    border: none;
+  }
+
+  .menu-item-prices {
+    align-self: center;
   }
 }
