@@ -1280,8 +1280,8 @@ article {
 }
 /*------ Gallery  ------------------------------------------------*/
 .gallery-filters {
-  float:left;
-  width:100%;
+  display: flex;
+  justify-content: center;
 }
 .gallery-filters  a {
   margin-right:20px;
@@ -1292,6 +1292,10 @@ article {
   font-size:17px;
   letter-spacing:2px;
   font-weight:bold;
+}
+
+.gallery-filters:last-child {
+  margin-right: 0;
 }
 .gallery-items   {
   float:left;
@@ -1532,6 +1536,11 @@ article {
   border-top:2px solid #eee;
   padding:50px 0;
 }
+
+.owl-item {
+  height: 275px;
+}
+
 .product-slider  .owl-controls{
   margin-top:20px;
 }
@@ -2654,10 +2663,9 @@ article h4 a:hover {
 }
 /*------ Contact  ------------------------------------------------*/
 .contact-details {
-  float:left;
   width:100%;
   padding-top:30px;
-  text-align:left;
+  text-align:center;
 }
 .contact-details h3 {
   font-size:24px;
